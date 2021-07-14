@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.youth.banner.Banner xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/welcome_guide_banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:indicator_height="8dip"
+        app:indicator_margin="10dip"
+        app:indicator_width="8dip" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dip"
+        android:orientation="vertical">
+
+        <com.qkl.online.mining.app.ui.view.GuideCountDownView
+            android:id="@+id/welcome_guide_countdownview"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:background="@drawable/shape_white_circle_bg"
+            android:gravity="center"
+            android:textColor="@color/color_ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/welcome_guide_goman"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:text="@string/enter_app"
+            android:textColor="@color/color_ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
